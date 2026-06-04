@@ -127,7 +127,7 @@ fallingtimer = 0
 
 depth = -75
 
-pal_select = 1
+pal_select = 0
 pattern_spr = pat_pizza
 
 input_buffers = {

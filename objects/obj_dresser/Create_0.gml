@@ -7,32 +7,10 @@ make_clothes_inst = function(_name, _desc, _pal_ix, _pattern = noone) constructo
 }
 
 clothes_arr = [	
-	new make_clothes_inst("Classic Cook",		"The one and only.",											1),
-	new make_clothes_inst("Unfunny Cook",		"Ha.",															3),	
-	new make_clothes_inst("Money Green",		"Green, like money!",											4),	
-	new make_clothes_inst("SAGE Blue",			"Nostalgia bait.",												5),	
-	new make_clothes_inst("Blood Red",			"Don't worry, it's just stained in pizza sauce.",				6),	
-	new make_clothes_inst("TV Purple",			"You are purple perfection.",									7),	
-	new make_clothes_inst("Dark Cook",			"For masochists.",												8),	
-	new make_clothes_inst("Shitty Cook",		"You smell like shit.",											9),	
-	new make_clothes_inst("Golden God",			"Try P ranking next time!",										10),	
-	new make_clothes_inst("Garish Cook",		"Flashy!",														11),	
-	new make_clothes_inst("Mooney Orange",		"Donating to the poor, how sweet!",								15),	
-	new make_clothes_inst("Funny Polka",		"HAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHA",				12,		pat_funny),	
-	new make_clothes_inst("Itchy Sweater",		"Thanks granny.",												12,		pat_itchy),	
-	new make_clothes_inst("Pizza Man",			"BECOME THE PIZZA!",											12,		pat_pizza),	
-	new make_clothes_inst("Bowling Stripes",	"Strike!",														12,		pat_stripes),	
-	new make_clothes_inst("Goldemanne",			"Ooooh, Shiny!",												12,		pat_goldemanne),	
-	new make_clothes_inst("Bad Bones",			"Good job, you're doing awful.",								12,		pat_bones),	
-	new make_clothes_inst("PP Shirt",			"Register now for 25% off your next order at Peppino Pizza.",	12,		pat_pp),	
-	new make_clothes_inst("War Camo",			"Is he a war veteran? Or is he just crazy?",					12,		pat_war),	
-	new make_clothes_inst("John Suit",			"Made from the dead remains of johns.",							12,		pat_john),
-	new make_clothes_inst("Candy Wrapper",		"Not tacky at all.",											12,		pat_candy),
-	new make_clothes_inst("Bloodstained",		"Only a little sauce, scary!",									12,		pat_bloodstained),
-	new make_clothes_inst("Autumn",				"That one flannel you wear for Thanksgiving",					12,		pat_autumn),
-	new make_clothes_inst("Pumpkin",			"I'm going to carve you.",										12,		pat_pumpkin),
-	new make_clothes_inst("Fur",				"Furry!",														12,		pat_fur),
-	new make_clothes_inst("Eyes",				"I see you.",													12,		pat_eyes),
+	new make_clothes_inst("Classic Cook",		"The one and only.",											0),
+	new make_clothes_inst("Unfunny Cook",		"Ha.",															1),	
+	new make_clothes_inst("Money Green",		"Green, like money!",											2),	
+	new make_clothes_inst("Money Green",		"Green, like money!",											3),	
 ]
 
 clothes_selected = 1

@@ -114,9 +114,9 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.14.4.222",
+    "IDEVersion":"2026.0.0.16",
   },
-  "name":"CompleteCook",
+  "name":"MechaPizzaFunhouse",
   "resources":[
     {"id":{"name":"gameframe_native","path":"extensions/gameframe_native/gameframe_native.yy",},},
     {"id":{"name":"fnt_caption","path":"fonts/fnt_caption/fnt_caption.yy",},},

@@ -17,7 +17,7 @@ function afterimage_create(a_type)
 		switch (a_type)
 		{
 			case after_images.mach:
-				image_blend = choose(#60d048, #f80000)
+				image_blend = choose(#86d0ff, #f8c452, #f87cf8)
 				lifetime = 10
 				break;
 			case after_images.blur:

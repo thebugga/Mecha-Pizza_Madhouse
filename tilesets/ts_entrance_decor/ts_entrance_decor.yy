@@ -8,7 +8,7 @@
     "TileSerialiseData":[],
   },
   "name":"ts_entrance_decor",
-  "out_columns":27,
+  "out_columns":26,
   "out_tilehborder":2,
   "out_tilevborder":2,
   "parent":{
@@ -34,5 +34,5 @@
   "tileWidth":32,
   "tilexoff":0,
   "tileyoff":0,
-  "tile_count":720,
+  "tile_count":700,
 }
