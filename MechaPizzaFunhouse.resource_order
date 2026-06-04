@@ -471,6 +471,7 @@
     {"name":"bg_entrance1","order":12,"path":"sprites/bg_entrance1/bg_entrance1.yy",},
     {"name":"bg_entrance2","order":13,"path":"sprites/bg_entrance2/bg_entrance2.yy",},
     {"name":"bg_entrance3","order":11,"path":"sprites/bg_entrance3/bg_entrance3.yy",},
+    {"name":"bg_frontfire","order":23,"path":"sprites/bg_frontfire/bg_frontfire.yy",},
     {"name":"bg_letterbox","order":26,"path":"sprites/bg_letterbox/bg_letterbox.yy",},
     {"name":"bg_letterbox2","order":28,"path":"sprites/bg_letterbox2/bg_letterbox2.yy",},
     {"name":"bg_letterbox3","order":27,"path":"sprites/bg_letterbox3/bg_letterbox3.yy",},

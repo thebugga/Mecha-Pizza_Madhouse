@@ -10,7 +10,7 @@
   "compression":0,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":145.4507,
+  "duration":128.80112,
   "exportDir":"",
   "name":"mu_entrance",
   "parent":{

@@ -15,6 +15,8 @@ switch state
 		boss_stun()
 		if anim_ended() && sprite_index == spr_pepperman_shoulderhurt
 			image_index = 3
+		if has_touched_le_wall >= 3
+			has_touched_le_wall = 0
 		break;
 	case states.hit:
 		boss_hit()
@@ -30,10 +32,12 @@ switch state
 			hurtplayer = false
 			stun_timer = 120
 			hsp = -5 * xscale
+			xscale *= -1
 			vsp = -5
+			has_touched_le_wall++
 			vulnerable = true
-			state = states.stun
-			sprite_index = spr_pepperman_shoulderhurt
+			state = has_touched_le_wall >= 3 ? states.stun : states.pm_attack
+			sprite_index = has_touched_le_wall >= 3 ? spr_pepperman_shoulderhurt : spr_pepperman_run
 		}
 		break;
 }

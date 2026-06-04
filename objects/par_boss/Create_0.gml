@@ -17,6 +17,7 @@ taunted = false
 vulnerable = false
 hitstun = 0
 bounces = 3
+has_touched_le_wall = 0
 alarm[1] = 200
 image_speed = 0.35
 hurtplayer = false

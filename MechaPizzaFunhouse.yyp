@@ -531,6 +531,7 @@
     {"id":{"name":"bg_entrance1","path":"sprites/bg_entrance1/bg_entrance1.yy",},},
     {"id":{"name":"bg_entrance2","path":"sprites/bg_entrance2/bg_entrance2.yy",},},
     {"id":{"name":"bg_entrance3","path":"sprites/bg_entrance3/bg_entrance3.yy",},},
+    {"id":{"name":"bg_frontfire","path":"sprites/bg_frontfire/bg_frontfire.yy",},},
     {"id":{"name":"bg_letterbox","path":"sprites/bg_letterbox/bg_letterbox.yy",},},
     {"id":{"name":"bg_letterbox2","path":"sprites/bg_letterbox2/bg_letterbox2.yy",},},
     {"id":{"name":"bg_letterbox3","path":"sprites/bg_letterbox3/bg_letterbox3.yy",},},

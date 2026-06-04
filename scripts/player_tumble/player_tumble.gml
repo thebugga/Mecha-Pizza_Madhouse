@@ -2,7 +2,7 @@ function player_tumble() //ball is in its own state, player_ball()
 {
 	hsp = xscale * movespeed
 	
-	if !grounded && sprite_index != spr_player_dive && sprite_index != spr_player_jumpdive_loop && sprite_index != spr_player_jumpdive
+	if !grounded && sprite_index != spr_player_dive && sprite_index != spr_player_jumpdive_loop && sprite_index != spr_player_jumpdive && sprite_index != spr_player_crouchslip
 	{
 		vsp = 10
 		sprite_index = spr_player_dive
@@ -95,6 +95,9 @@ function player_tumble() //ball is in its own state, player_ball()
 	
 	if sprite_index == spr_player_dive && vsp < 10
 		vsp = 10
+
+    if (sprite_index == spr_player_crouchslip && !grounded)
+        sprite_index = spr_player_jumpdive_loop;
 		
 	image_speed = movespeed / 20
 		

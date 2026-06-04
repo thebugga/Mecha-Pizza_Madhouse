@@ -10,7 +10,7 @@
   "compression":2,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":5.1266665,
+  "duration":6.182958,
   "exportDir":"",
   "name":"mu_timesup",
   "parent":{
@@ -21,6 +21,6 @@
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":48000,
-  "soundFile":"mu_timesup.ogg",
-  "volume":0.6,
+  "soundFile":"mu_timesup.wav",
+  "volume":1.0,
 }

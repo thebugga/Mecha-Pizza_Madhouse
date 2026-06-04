@@ -39,3 +39,6 @@ else
 	pizzaface.sprite_index = spr_timer_pizzaface_sleep
 	y = ystart + 212
 }
+
+im_speed += 0.25
+fx_speed += 1.5

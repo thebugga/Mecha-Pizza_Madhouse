@@ -10,7 +10,7 @@
   "compression":2,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":178.09706,
+  "duration":301.98666,
   "exportDir":"",
   "name":"mu_lap2",
   "parent":{

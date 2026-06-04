@@ -8,6 +8,9 @@ if (!global.panic.active)
 	exit;
 }
 
+if global.level_data.lap2
+	draw_sprite_tiled(bg_frontfire, im_speed, fx_speed, 60)
+
 var currentbarpos = global.panic.timer_max - global.panic.timer
 var perc = currentbarpos / global.panic.timer_max
 var max_x = 299
