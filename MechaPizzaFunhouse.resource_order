@@ -762,6 +762,8 @@
     {"name":"spr_player_idlehand","order":94,"path":"sprites/spr_player_idlehand/spr_player_idlehand.yy",},
     {"name":"spr_player_idlewhat","order":92,"path":"sprites/spr_player_idlewhat/spr_player_idlewhat.yy",},
     {"name":"spr_player_jump","order":34,"path":"sprites/spr_player_jump/spr_player_jump.yy",},
+    {"name":"spr_player_jumpdive_loop","order":154,"path":"sprites/spr_player_jumpdive_loop/spr_player_jumpdive_loop.yy",},
+    {"name":"spr_player_jumpdive","order":153,"path":"sprites/spr_player_jumpdive/spr_player_jumpdive.yy",},
     {"name":"spr_player_keyget","order":107,"path":"sprites/spr_player_keyget/spr_player_keyget.yy",},
     {"name":"spr_player_kungfu1","order":131,"path":"sprites/spr_player_kungfu1/spr_player_kungfu1.yy",},
     {"name":"spr_player_kungfu2","order":130,"path":"sprites/spr_player_kungfu2/spr_player_kungfu2.yy",},

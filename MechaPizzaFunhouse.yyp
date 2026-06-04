@@ -114,9 +114,9 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.14.4.222",
+    "IDEVersion":"2026.0.0.16",
   },
-  "name":"CompleteCook",
+  "name":"MechaPizzaFunhouse",
   "resources":[
     {"id":{"name":"gameframe_native","path":"extensions/gameframe_native/gameframe_native.yy",},},
     {"id":{"name":"fnt_caption","path":"fonts/fnt_caption/fnt_caption.yy",},},
@@ -851,6 +851,8 @@
     {"id":{"name":"spr_player_idlehand","path":"sprites/spr_player_idlehand/spr_player_idlehand.yy",},},
     {"id":{"name":"spr_player_idlewhat","path":"sprites/spr_player_idlewhat/spr_player_idlewhat.yy",},},
     {"id":{"name":"spr_player_jump","path":"sprites/spr_player_jump/spr_player_jump.yy",},},
+    {"id":{"name":"spr_player_jumpdive_loop","path":"sprites/spr_player_jumpdive_loop/spr_player_jumpdive_loop.yy",},},
+    {"id":{"name":"spr_player_jumpdive","path":"sprites/spr_player_jumpdive/spr_player_jumpdive.yy",},},
     {"id":{"name":"spr_player_keyget","path":"sprites/spr_player_keyget/spr_player_keyget.yy",},},
     {"id":{"name":"spr_player_kungfu1","path":"sprites/spr_player_kungfu1/spr_player_kungfu1.yy",},},
     {"id":{"name":"spr_player_kungfu2","path":"sprites/spr_player_kungfu2/spr_player_kungfu2.yy",},},
