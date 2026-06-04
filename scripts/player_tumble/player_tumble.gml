@@ -2,13 +2,13 @@ function player_tumble() //ball is in its own state, player_ball()
 {
 	hsp = xscale * movespeed
 	
-	if !grounded && sprite_index != spr_player_dive
+	if !grounded && sprite_index != spr_player_dive && sprite_index != spr_player_jumpdive_loop && sprite_index != spr_player_jumpdive
 	{
 		vsp = 10
 		sprite_index = spr_player_dive
 		scr_sound_3d_pitched(sfx_dive, x, y, 1.3, 1.315)
 	}
-	else if grounded && sprite_index == spr_player_dive
+	else if grounded && (sprite_index == spr_player_dive || sprite_index == spr_player_jumpdive || sprite_index == spr_player_jumpdive_loop)
 		reset_anim(spr_player_machroll)
 		
 	if (sprite_index == spr_player_dive && input_buffers.jump > 0)
@@ -23,6 +23,12 @@ function player_tumble() //ball is in its own state, player_ball()
 	if movespeed <= 2
 		state = states.normal
 		
+	if (!jumpstop && !input_check(INPUTS.jump) && vsp < 0)
+	{
+		jumpstop = true
+		vsp /= 10
+	}
+	
 	if (sprite_index == spr_player_mach2jump && grounded)
 		sprite_index = spr_player_machroll
 	
@@ -80,6 +86,13 @@ function player_tumble() //ball is in its own state, player_ball()
 		}
 	}
 	
+	if (input_buffers.jump > 0 && sprite_index == spr_player_crouchslip && coyote_time && scr_can_uncrouch())
+	{
+		vsp = -11
+		reset_anim(spr_player_jumpdive)
+		particle_create(x, y, particles.genericpoof, xscale, 1, spr_superdashcloud)
+	}
+	
 	if sprite_index == spr_player_dive && vsp < 10
 		vsp = 10
 		
@@ -87,6 +100,9 @@ function player_tumble() //ball is in its own state, player_ball()
 		
 	if sprite_index == spr_player_backslide && anim_ended()
 		reset_anim(spr_player_backslide_loop)
+	
+	if sprite_index == spr_player_jumpdive && anim_ended()
+		reset_anim(spr_player_jumpdive_loop)
 	
 	aftimg_timers.blur.do_it = true
 }
