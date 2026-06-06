@@ -28,5 +28,6 @@ sprs = {
 	scared: spr_pepperman_scared,
 	dead: spr_pepperman_scared,
 	stun: spr_pepperman_stun,
-	turn: spr_pepperman_idle
+	turn: spr_pepperman_idle,
+	hit: spr_pepperman_hit
 }

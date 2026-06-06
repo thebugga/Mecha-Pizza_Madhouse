@@ -21,6 +21,6 @@
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":48000,
-  "soundFile":"sfx_bossintro.wav",
+  "soundFile":"sfx_bossintro.ogg",
   "volume":1.0,
 }

@@ -10,7 +10,7 @@
   "compression":2,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":1.9715647,
+  "duration":1.9715625,
   "exportDir":"",
   "name":"sfx_tvswitchback",
   "parent":{

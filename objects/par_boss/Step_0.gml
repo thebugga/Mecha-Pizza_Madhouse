@@ -8,8 +8,8 @@ switch state
 {
 	case states.normal:
 		boss_normal()
-		if alarm[1] == -1
-			alarm[1] = 100
+		if alarm[1] == -1 || alarm[2] == -1
+			choose(alarm[1] = 100, alarm[2] = 100)
 		break;
 	case states.stun:
 		boss_stun()
@@ -40,6 +40,29 @@ switch state
 			sprite_index = has_touched_le_wall >= 3 ? spr_pepperman_shoulderhurt : spr_pepperman_run
 		}
 		break;
+	case states.pm_attackbat:
+	
+	sprs = hit
+
+	with obj_player
+	{
+		vsp = 0
+		hsp = 0
+		y = other.y
+		x = other.x
+	}
+	
+	if sprs = hit && image_index == 12
+	{
+		with obj_player
+		{
+			state = states.tumble
+			vsp = -10
+			movespeed = 10
+			
+		}
+	}
+	break;
 }
 
 do_vulnerability()
