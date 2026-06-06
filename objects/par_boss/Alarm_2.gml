@@ -1,4 +1,4 @@
-state = states.pm_attackbat
+state = states.pm_bat
 sprs = hit
 
 	with obj_player

@@ -40,7 +40,7 @@ switch state
 			sprite_index = has_touched_le_wall >= 3 ? spr_pepperman_shoulderhurt : spr_pepperman_run
 		}
 		break;
-	case states.pm_attackbat:
+	case states.pm_bat:
 	
 	sprs = hit
 

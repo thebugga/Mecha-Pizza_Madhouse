@@ -41,7 +41,7 @@ enum states
 	
 	//boss states
 	pm_attack,
-	pm_attackbat,
+	pm_bat,
 	
 	//extras
 	throwing,
