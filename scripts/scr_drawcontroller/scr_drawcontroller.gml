@@ -30,7 +30,7 @@ function draw_player(){
 
 	pal_swap_set(pal_peppino, pal_select, false)
 	if room == town_sewer1
-		outline_draw_sprite_ext(sprite_index, image_index, xx, yy, xscale * visual_size, image_yscale * visual_size, image_angle, image_blend, image_alpha, ol_config(2, #9850F8, 1, 1))
+		draw_sprite_outline_auto(sprite_index, image_index, xx, yy, #9850F8, 2, 1, xscale * visual_size, image_yscale * visual_size, image_angle, image_blend, image_alpha)
 	else
 		draw_sprite_ext(sprite_index, image_index, xx, yy, xscale * visual_size, image_yscale * visual_size, image_angle, image_blend, image_alpha)
 	pal_swap_reset()
@@ -96,7 +96,7 @@ function draw_enemy()
 		bird_ix = 0
 
 	if room == town_sewer1
-		outline_draw_sprite_ext(sprite_index, image_index, _x, _y, xscale - (warp * xscale), yscale + warp, image_angle, image_blend, image_alpha, ol_config(2, #9850F8, 1, 1))
+		draw_sprite_outline_auto(sprite_index, image_index, _x, _y, #9850F8, 2, 1, xscale - (warp * xscale), yscale + warp, image_angle, image_blend, image_alpha)
 	else
 		draw_sprite_ext(sprite_index, image_index, _x, _y, xscale - (warp * xscale), yscale + warp, image_angle, image_blend, image_alpha)
 	

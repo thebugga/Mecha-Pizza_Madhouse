@@ -1,12 +1,12 @@
 {
   "$GMScript":"v1",
-  "%Name":"__scr_outline",
+  "%Name":"shader_utility",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"__scr_outline",
+  "name":"shader_utility",
   "parent":{
-    "name":"Outline System",
-    "path":"folders/Outline System.yy",
+    "name":"ScriptsUtilities",
+    "path":"folders/ScriptsUtilities.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",
