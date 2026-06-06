@@ -122,12 +122,12 @@ function draw_boss()
 		yy += irandom_range(-range, range)
 	}
 
-	if state == states.stun && !vulnerable
+	if state == states.stun && !vulnerable || alpha_flash
 		image_alpha = wave(1, 0.5, 0.5, 0)
 	else
 		image_alpha = 1
 
-	draw_sprite_ext(sprite_index, image_index, _x, _y, xscale - (warp * xscale), yscale + warp, image_angle, image_blend, image_alpha)
+	draw_sprite_ext(sprite_index, image_index, xx, yy, xscale - (warp * xscale), yscale + warp, image_angle, image_blend, image_alpha)
 
 	if flash || (vulnerable && round(wave(0, 1, 0.25, 0)) == 1)
 	{

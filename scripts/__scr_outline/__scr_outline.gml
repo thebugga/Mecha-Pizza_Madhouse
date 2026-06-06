@@ -320,7 +320,7 @@ function outline_bake_sprite_text(_font, _string, _str_col, _str_alpha, _ol_conf
 		draw_clear_alpha(0, 0);
 		gpu_set_blendmode_ext(bm_one, bm_inv_src_alpha);
 		draw_surface_ext(_surf1, 0, 0, 1, 1, 0, _str_col, _str_alpha);
-		gpu_set_blendmode(bm_normal);
+		gpu_set_blendmode_normal_fixed();
 	surface_reset_target();
 	outline_end();
 	
@@ -402,7 +402,7 @@ function outline_bake_sprite_text_ext(_font, _string, _sep, _w, _str_col, _str_a
 		draw_clear_alpha(0, 0);	
 		gpu_set_blendmode_ext(bm_one, bm_inv_src_alpha);
 		draw_surface_ext(_surf1, 0, 0, 1, 1, 0, _str_col, _str_alpha);
-		gpu_set_blendmode(bm_normal)
+		gpu_set_blendmode_normal_fixed()
 	surface_reset_target();
 	outline_end();
 	
@@ -868,7 +868,7 @@ function outline_bake_sprite(_spr, _spr_col, _spr_alpha, _ol_config = ol_config(
 			draw_clear_alpha(0, 0);
 			gpu_set_blendmode_ext(bm_one, bm_inv_src_alpha);
 			draw_sprite(_spr, i, _x+_gap, _y+_gap);
-			gpu_set_blendmode(bm_normal)
+			gpu_set_blendmode_normal_fixed()
 		surface_reset_target();
 		
 		outline_set_surface(_surf2, _ol_config);
@@ -876,7 +876,7 @@ function outline_bake_sprite(_spr, _spr_col, _spr_alpha, _ol_config = ol_config(
 			draw_clear_alpha(0, 0);
 			gpu_set_blendmode_ext(bm_one, bm_inv_src_alpha);
 			draw_surface_ext(_surf1, 0, 0, 1, 1, 0, _spr_col, _spr_alpha);
-			gpu_set_blendmode(bm_normal)
+			gpu_set_blendmode_normal_fixed()
 		surface_reset_target();
 		outline_end();
 		

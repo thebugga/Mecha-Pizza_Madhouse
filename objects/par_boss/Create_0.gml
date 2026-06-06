@@ -18,11 +18,13 @@ vulnerable = false
 hitstun = 0
 bounces = 3
 has_touched_le_wall = 0
+alpha_flash = false
+show_scorenew = false
 alarm[1] = 200
 image_speed = 0.35
 hurtplayer = false
 afterimage_timer = 0
-
+yy = 736
 sprs = {
 	move: spr_pepperman_idle,
 	scared: spr_pepperman_scared,

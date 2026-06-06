@@ -1,10 +1,5 @@
+hsp = 0
+xscale = x >= obj_player.x ? -1 : 1
 state = states.pm_bat
-sprs = hit
-
-	with obj_player
-	{
-		vsp = 0
-		hsp = 0
-		y = other.y
-		x = other.x
-	}
+reset_anim(spr_pepperman_run)
+scr_sound(sfx_peppermanrun, true)

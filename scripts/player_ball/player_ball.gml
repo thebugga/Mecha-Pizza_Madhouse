@@ -51,7 +51,7 @@ function player_ball()
 	
 		aftimg_timers.blur.do_it = true
 	}
-	else if grounded
+	else if (grounded && room != boss_test || room == boss_test && sprite_index == spr_player_ballend)
 	{
 		image_speed = 0.35
 		state = states.bump

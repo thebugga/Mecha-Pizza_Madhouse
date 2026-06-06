@@ -152,6 +152,7 @@ function set_globals()
 		wasted: false
 	}
 	
+	randomise()
 	ini_open("globalsave.ini")
 	global.option_master_volume = ini_read_real("options", "master_volume", 1)
 	global.option_music_volume = ini_read_real("options", "music_volume", 1)

@@ -81,6 +81,8 @@ else
 grav = 0.5
 if state == states.ladder
 	grav = 0
+if state == states.ball
+	grav = 0.1
 
 if (y > room_height + 300 || y < -800) && state != states.actor && state != states.backtohub
 {

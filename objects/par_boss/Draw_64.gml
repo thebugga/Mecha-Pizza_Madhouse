@@ -1,0 +1,1 @@
+draw_sprite(spr_yes, 1, 0 + irandom_range(max(0 - 2.5, 0), -max(0 - 2.5, 0)), yy + irandom_range(max(0 - 2.5, 0), -max(0 - 2.5, 0)))
