@@ -1,0 +1,1 @@
+global.roommessage = "DONT LET THE BEARS BITE!"

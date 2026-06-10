@@ -10,7 +10,7 @@
   "compression":2,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":100.54242,
+  "duration":148.16257,
   "exportDir":"",
   "name":"mu_pizzatime",
   "parent":{

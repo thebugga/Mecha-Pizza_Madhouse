@@ -7,4 +7,6 @@ if (sprite_index == spr_pizzaportalend && !obj_fade.fade)
 	ds_list_clear(global.ds_escapesaveroom)
 	obj_music.lap2 = true
 	global.level_data.lap2 = true
+	if !instance_exists(obj_pillarflash)
+		instance_create(0, 0, obj_pillarflash)
 }

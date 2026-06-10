@@ -146,6 +146,7 @@ function scr_solid(_x, _y)
 					collided = true
 					continue;
 				case obj_platform:
+				case obj_fallingplatform:
 				case obj_movingplatform:
 					if image_yscale >= 0 && master.bbox_bottom <= bbox_top && !climbingladder
 						collided = true

@@ -10,7 +10,7 @@ if (!global.panic.active)
 
 if global.level_data.lap2
 {
-	draw_sprite_tiled(bg_frontfire, im_speed, fx_speed, screen_h + 80)
+	draw_sprite_tiled(bg_frontfire, im_speed, fx_speed, screen_h + 150)
 }
 
 var currentbarpos = global.panic.timer_max - global.panic.timer

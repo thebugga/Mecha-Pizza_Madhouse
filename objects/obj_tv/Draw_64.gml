@@ -23,14 +23,15 @@ for (var i = num; i > 0; i--)
 	_ty -= 8
 }
 
-draw_sprite(spr_tv_bg, 0, x, y)
+//draw_sprite(spr_tv_bg, 0, x, y)
 
-if obj_player.pal_select == 12
-	pattern_draw(sprite_index, image_index, x, y, obj_player.pattern_spr, image_xscale, image_yscale)
+//if obj_player.pal_select == 12
+//	pattern_draw(sprite_index, image_index, x, y, obj_player.pattern_spr, image_xscale, image_yscale)
 
 pal_swap_set(pal_peppino, obj_player.pal_select, false)
-draw_self()
+//draw_self()
+draw_sprite(spr_tv_placeholder, 0, x, y)
 pal_swap_reset()
 
-if state == tv_states.transition
-	draw_sprite(spr_tv_trans, t_index, x, y)
+//if state == tv_states.transition
+//	draw_sprite(spr_tv_trans, t_index, x, y)

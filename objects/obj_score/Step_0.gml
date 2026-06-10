@@ -9,5 +9,5 @@ if (obj_player.x < 300 && obj_player.y < 125)
 
 display_y = approach(display_y, y_goto, 25)
 
-x = 121 + irandom_range(shake_mag, -shake_mag)
+x = 116 + irandom_range(shake_mag, -shake_mag)
 y = display_y + irandom_range(shake_mag, -shake_mag)

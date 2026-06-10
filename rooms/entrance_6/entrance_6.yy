@@ -149,8 +149,8 @@
   ],
   "name":"entrance_6",
   "parent":{
-    "name":"John Gutter",
-    "path":"folders/Rooms/John Gutter.yy",
+    "name":"Z_John Gutter",
+    "path":"folders/Rooms/Z_John Gutter.yy",
   },
   "parentRoom":null,
   "physicsSettings":{

@@ -34,11 +34,11 @@ var text_offsets = [0, 1, 1, 1, 0, -1, -2, -3, -5, -2, -1, 0]
 
 var text_offset = text_offsets[image_index]
 
-for (var i = 0; i < min(rank_ix, 4); i++)
-	draw_sprite(spr_pizzascore_toppings, i, x, y + text_offset)
-
-draw_set_font(global.scorefont)
-draw_reset_color()
+//for (var i = 0; i < min(rank_ix, 4); i++)
+//	draw_sprite(spr_pizzascore_toppings, i, x, y + text_offset)
+	
+draw_set_colour(c_lime)
+draw_set_font(fnt_calc)
 
 var arr = obj_collect_got_visual.collects
 
@@ -74,6 +74,7 @@ for (var i = 0; i < len; i++)
 	draw_text(floor(xx), floor((y - 56) + text_y + yy), string_char_at(str, i + 1))
 	xx += (w / len)
 }
+draw_reset_color()
 
 var r_pos = {
 	x: x + 142,
