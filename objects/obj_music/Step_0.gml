@@ -81,11 +81,6 @@ if isPanic
 		
 		audio_stop_sound(panic_mu)
 		panic_mu = noone
-		
-		panic_pinch_mu = scr_sound(mu_pizzatime)
-		audio_sound_set_track_position(panic_pinch_mu, 170.63)
-		audio_sound_gain(panic_pinch_mu, 0, 0)
-		audio_sound_gain(panic_pinch_mu, 1, 2000)
 	}
 	
 	if (lap2 && !lap2_init)
@@ -101,17 +96,6 @@ if isPanic
 			
 			audio_stop_sound(panic_mu)
 			panic_mu = noone
-		}
-		
-		if panic_pinch_mu != noone
-		{
-			prevpos = audio_sound_get_track_position(panic_pinch_mu)
-			prevmu = scr_sound(audio_sound_get_asset(panic_pinch_mu), true)
-			audio_sound_set_track_position(prevmu, prevpos)
-			audio_sound_gain(prevmu, 0, 2000)
-			
-			audio_stop_sound(panic_pinch_mu)
-			panic_pinch_mu = noone
 		}
 		
 		panic_mu = scr_sound(mu_lap2, true)

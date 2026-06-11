@@ -7,7 +7,7 @@ var p_id = instance_create(x, y, obj_enemycorpse)
 
 with p_id
 {
-	sprite_index = spr_pillar_dead
+	sprite_index = other.sprite_index
 	image_xscale = other.image_xscale
 }
 
