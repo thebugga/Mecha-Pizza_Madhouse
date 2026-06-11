@@ -3,7 +3,7 @@
   "%Name":"fnt_caption",
   "AntiAlias":1,
   "applyKerning":0,
-  "ascender":0,
+  "ascender":14,
   "ascenderOffset":0,
   "bold":false,
   "canGenerateBitmap":true,
@@ -206,7 +206,7 @@
     {"amount":-1,"first":121,"second":8230,},
   ],
   "last":0,
-  "lineHeight":0,
+  "lineHeight":18,
   "maintainGms1Font":false,
   "name":"fnt_caption",
   "parent":{

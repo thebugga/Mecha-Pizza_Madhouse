@@ -1,0 +1,1 @@
+dialog[0] = dialog_create("FUCK OFF", dia_bunny);
