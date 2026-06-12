@@ -26,19 +26,19 @@ function draw_player(){
 		image_alpha = round(wave(0, 1, 0.01, 0))
 
 	if pal_select == 12
-		pattern_draw(sprite_index, image_index, xx, yy, pattern_spr, xscale * visual_size, image_yscale * visual_size, image_angle, image_blend, image_alpha)
+		pattern_draw(sprite_index, image_index, xx, yy, pattern_spr, xscale * visual_size, image_yscale * visual_size, visual_angle, image_blend, image_alpha)
 
 	pal_swap_set(pal_peppino, pal_select, false)
 	if room == town_sewer1
-		draw_sprite_outline_auto(sprite_index, image_index, xx, yy, #9850F8, 2, 1, xscale * visual_size, image_yscale * visual_size, image_angle, image_blend, image_alpha)
+		draw_sprite_outline_auto(sprite_index, image_index, xx, yy, #9850F8, 2, 1, xscale * visual_size, image_yscale * visual_size, visual_angle, image_blend, image_alpha)
 	else
-		draw_sprite_ext(sprite_index, image_index, xx, yy, xscale * visual_size, image_yscale * visual_size, image_angle, image_blend, image_alpha)
+		draw_sprite_ext(sprite_index, image_index, xx, yy, xscale * visual_size, image_yscale * visual_size, visual_angle, image_blend, image_alpha)
 	pal_swap_reset()
 
 	if flash > 0
 	{
 		shader_set(shd_flash)
-		draw_sprite_ext(sprite_index, image_index, xx, yy, xscale * visual_size, image_yscale * visual_size, image_angle, image_blend, image_alpha)
+		draw_sprite_ext(sprite_index, image_index, xx, yy, xscale * visual_size, image_yscale * visual_size, visual_angle, image_blend, image_alpha)
 		shader_reset()
 	}
 

@@ -1,1 +1,1 @@
-dialog[0] = dialog_create("FUCK OFF", dia_bunny);
+dialog[0] = dialog_create("I THINK YEA", dia_bunny);

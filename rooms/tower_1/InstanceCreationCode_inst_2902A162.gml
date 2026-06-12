@@ -1,0 +1,1 @@
+dialog[0] = dialog_create("THOSE WHO SNOW", dia_noelle, -4, bg_noelle,"NOELLE");

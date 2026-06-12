@@ -25,7 +25,9 @@ draw_sprite_ext(spr_computerbubble, 1, x1 - 15, y1 - 85, 2, 1, 0, c_white, 1);
 draw_set_halign(fa_center);
 draw_set_valign(fa_top);
 draw_set_font(global.tutorialfont);
-draw_text_color(x1 + 75, y1 - 75, "my name is", c_black, c_black, c_black, c_black, 1);
+draw_set_colour(c_black)
+outline_draw_text(x1 + 75, y1 - 75, "my name is",ol_config(2,c_white,0.5,1));
+draw_set_colour(c_white)
 draw_set_font(global.creditsfont);
 draw_text_color(x1 + 75, y1 - 45, charactername, c_white, c_white, c_white, c_white, 1);
 

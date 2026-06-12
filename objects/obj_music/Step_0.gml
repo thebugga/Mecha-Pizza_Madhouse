@@ -43,23 +43,14 @@ if !isPanic
 		panic_mu = noone;
 	}
 	
-	if panic_pinch_mu != noone
-	{
-		audio_stop_sound(panic_pinch_mu);
-		panic_pinch_mu = noone;
-	}
-	
 	panic_music_initiated = false
-	pinch_init = false
 	lap2 = false
 	lap2_init = false
 }
 
-var pinch_point = 662;
-
 if isPanic
 {
-	if (!panic_music_initiated && !pinch_init && !lap2)
+	if (!panic_music_initiated && !lap2)
 	{
 		panic_music_initiated = true
 		audio_stop_sound(mu)
@@ -68,19 +59,6 @@ if isPanic
 		panic_mu = scr_sound(mu_pizzatime, true)
 		audio_sound_loop_start(panic_mu, 47.96)
 		audio_sound_loop_end(panic_mu, 159.94)
-	}
-	
-	if (global.panic.timer < pinch_point && !pinch_init && !lap2)
-	{
-		pinch_init = true
-		
-		var prevpos = audio_sound_get_track_position(panic_mu)
-		prevmu = scr_sound(audio_sound_get_asset(panic_mu), true)
-		audio_sound_set_track_position(prevmu, prevpos)
-		audio_sound_gain(prevmu, 0, 2000)
-		
-		audio_stop_sound(panic_mu)
-		panic_mu = noone
 	}
 	
 	if (lap2 && !lap2_init)

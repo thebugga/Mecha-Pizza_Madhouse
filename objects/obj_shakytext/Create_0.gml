@@ -1,6 +1,6 @@
 depth = -2500
 font = global.creditsfont
-str = "do dis work?"
+str = ""
 align = {
 	h: fa_center,
 	v: fa_middle

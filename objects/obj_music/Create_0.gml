@@ -23,7 +23,6 @@ pauseIDS = function(pause = true)
 		"mu",
 		"prevmu",
 		"panic_mu",
-		"panic_pinch_mu"
 	];
 	
 	for (var i = 0; i < array_length(pauseSounds); i++)
@@ -43,11 +42,9 @@ pauseIDS = function(pause = true)
 mu = noone;
 prevmu = noone;
 panic_mu = noone;
-panic_pinch_mu = noone
 pillar_mu = noone
 secret_mu = noone
 secret_mu_to_play = noone
 panic_music_initiated = false
-pinch_init = false
 lap2 = false
 lap2_init = false

@@ -174,3 +174,15 @@ uparrow.visible = state != states.actor &&
 	place_meeting(x, y, obj_door))))
 
 player_sounds()
+
+if (grounded && scr_slope(x, y + 1))
+{
+    with instance_place(x, y, obj_slope)
+    {
+        var _dir = sign(image_xscale) 
+        var angle_rad = arctan2(image_yscale * _dir, image_xscale * _dir)
+        other.visual_angle = radtodeg(angle_rad)
+    }
+}
+else
+    visual_angle = 0

@@ -1,11 +1,11 @@
 {
   "$GMSprite":"v2",
   "%Name":"spr_fallingplatform",
-  "bboxMode":2,
-  "bbox_bottom":165,
-  "bbox_left":11,
-  "bbox_right":178,
-  "bbox_top":141,
+  "bboxMode":0,
+  "bbox_bottom":20,
+  "bbox_left":0,
+  "bbox_right":160,
+  "bbox_top":0,
   "collisionKind":1,
   "collisionTolerance":0,
   "DynamicTexturePage":false,
@@ -16,7 +16,7 @@
   ],
   "gridX":0,
   "gridY":0,
-  "height":166,
+  "height":21,
   "HTile":false,
   "layers":[
     {"$GMImageLayer":"","%Name":"2bf17929-ce42-4812-ae93-364e43c54ff3","blendMode":0,"displayName":"default","isLocked":false,"name":"2bf17929-ce42-4812-ae93-364e43c54ff3","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
@@ -88,5 +88,5 @@
   },
   "type":0,
   "VTile":false,
-  "width":192,
+  "width":161,
 }

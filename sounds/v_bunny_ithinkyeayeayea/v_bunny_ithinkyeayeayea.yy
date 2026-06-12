@@ -1,0 +1,26 @@
+{
+  "$GMSound":"v2",
+  "%Name":"v_bunny_ithinkyeayeayea",
+  "audioGroupId":{
+    "name":"ag_sfx",
+    "path":"audiogroups/ag_sfx",
+  },
+  "bitDepth":1,
+  "channelFormat":1,
+  "compression":2,
+  "compressionQuality":4,
+  "conversionMode":0,
+  "duration":1.5711459,
+  "exportDir":"",
+  "name":"v_bunny_ithinkyeayeayea",
+  "parent":{
+    "name":"Voice",
+    "path":"folders/Sounds/Voice.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":48000,
+  "soundFile":"v_bunny_ithinkyeayeayea.wav",
+  "volume":1.0,
+}
