@@ -10,7 +10,7 @@
   "compression":2,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":1.4520181,
+  "duration":1.452,
   "exportDir":"",
   "name":"sfx_supertauntnotif",
   "parent":{

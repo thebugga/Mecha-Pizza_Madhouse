@@ -10,7 +10,7 @@
   "compression":2,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":1.7026666,
+  "duration":1.1933541,
   "exportDir":"",
   "name":"v_rarescream1",
   "parent":{
@@ -22,5 +22,5 @@
   "resourceVersion":"2.0",
   "sampleRate":48000,
   "soundFile":"v_rarescream1.wav",
-  "volume":1.0,
+  "volume":0.1,
 }

@@ -20,9 +20,13 @@ if !layer_background_exists(lay_id, back_id)
 layer_depth(layer_get_id("Instances"), 0)
 layer_depth(layer_get_id("Instances_1"), 0)
 
-layer_set_visible(layer_get_id("Tiles_1"), false)
-layer_set_visible(layer_get_id("Tiles_2"), false)
-layer_set_visible(layer_get_id("Tiles_3"), false)
-layer_set_visible(layer_get_id("Tiles_4"), false)
-layer_set_visible(layer_get_id("Tiles_BG"), false)
-layer_set_visible(layer_get_id("Tiles_BG2"), false)
+layer_depth(layer_get_id("Tiles_1"), -100)
+layer_depth(layer_get_id("Tiles_2"), -100)
+layer_depth(layer_get_id("Tiles_3"), -100)
+layer_depth(layer_get_id("Tiles_4"), -100)
+layer_depth(layer_get_id("Tiles_BG"), 100)
+layer_depth(layer_get_id("Tiles_BG2"), 100)
+
+var roomname = room_get_name(room);
+roomname = string_letters(roomname);
+	

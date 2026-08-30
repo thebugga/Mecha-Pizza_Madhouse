@@ -1,6 +1,6 @@
 {
   "$GMSound":"v2",
-  "%Name":"v_bunny_ithinkyeayeayea",
+  "%Name":"v_raredeathscream",
   "audioGroupId":{
     "name":"ag_sfx",
     "path":"audiogroups/ag_sfx",
@@ -10,9 +10,9 @@
   "compression":2,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":1.5711459,
+  "duration":2.424,
   "exportDir":"",
-  "name":"v_bunny_ithinkyeayeayea",
+  "name":"v_raredeathscream",
   "parent":{
     "name":"Voice",
     "path":"folders/Sounds/Voice.yy",
@@ -21,6 +21,6 @@
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":48000,
-  "soundFile":"v_bunny_ithinkyeayeayea.wav",
+  "soundFile":"v_raredeathscream.mp3",
   "volume":1.0,
 }

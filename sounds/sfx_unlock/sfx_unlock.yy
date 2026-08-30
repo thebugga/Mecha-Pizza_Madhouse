@@ -10,7 +10,7 @@
   "compression":2,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":3.3240137,
+  "duration":3.324,
   "exportDir":"",
   "name":"sfx_unlock",
   "parent":{

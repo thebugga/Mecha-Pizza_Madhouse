@@ -17,7 +17,10 @@
   },
   "resourceType":"GMTileSet",
   "resourceVersion":"2.0",
-  "spriteId":null,
+  "spriteId":{
+    "name":"tsspr_forest",
+    "path":"sprites/tsspr_forest/tsspr_forest.yy",
+  },
   "spriteNoExport":false,
   "textureGroupId":{
     "name":"Default",

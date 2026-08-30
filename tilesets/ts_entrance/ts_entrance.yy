@@ -17,7 +17,10 @@
   },
   "resourceType":"GMTileSet",
   "resourceVersion":"2.0",
-  "spriteId":null,
+  "spriteId":{
+    "name":"tsspr_entrance",
+    "path":"sprites/tsspr_entrance/tsspr_entrance.yy",
+  },
   "spriteNoExport":false,
   "textureGroupId":{
     "name":"Default",

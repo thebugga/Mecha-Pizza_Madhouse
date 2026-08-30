@@ -1,15 +1,77 @@
-obj_player.state = states.normal
 global.score += 3000
+
 with instance_create(x, y, obj_collect_number)
 	num = 3000
 	
-global.combo.timer = 60
 global.level_data.treasure = true
+global.panic.active = false
+hsp = 0
+movespeed = 0
+state = states.actor
+reset_anim(spr_player_lookdoor)
+		
+var s = round(global.score + obj_levelcontroller.combo_score)
+		
+var _rank_ix = 0
+		
+var ranks = [
+	global.rank_milestones.c,
+	global.rank_milestones.b,
+	global.rank_milestones.a,
+	global.rank_milestones.s
+]
 
-if obj_music.mu != noone
-	audio_sound_gain(obj_music.mu, 1, 250)
-	
-if obj_music.panic_mu != noone
-	audio_sound_gain(obj_music.panic_mu, 1, 250)
-	
+if (s >= global.rank_milestones.s && check_p_rank())
+	_rank_ix = 5
+else
+{
+	for (var i = 4; i >= 1; i--) 
+	{
+		if s >= ranks[i - 1]
+		{
+			_rank_ix = i
+			break;
+		}
+	}
+}
+		
+with instance_create(0, 0, obj_rank)
+{
+	rank_ix = _rank_ix
+	rank_score = s
+	results[0][1] = s
+	results[1][1] = string_convert_seconds_to_timer(obj_timer.level_timer, false, true)
+	results[2][1] = global.hurtcounter
+	results[3][1] = global.combo.record
+}
+		
+ini_open(global.savestring)
+		
+var lvl_name = global.level_data.level_name
+var lvl_toppins = global.level_data.toppins
+		
+if s > ini_read_real(lvl_name, "score", 0)
+	ini_write_real(lvl_name, "score", s)
+		
+if !ini_read_real(lvl_name, "treasure", 0)
+	ini_write_real(lvl_name, "treasure", global.level_data.treasure)
+		
+if global.level_data.secret_count > ini_read_real(lvl_name, "secret_count", 0)
+	ini_write_real(lvl_name, "secret_count", global.level_data.secret_count)
+		
+if _rank_ix > ini_read_real(lvl_name, "rank", 0)
+	ini_write_real(lvl_name, "rank", _rank_ix)
+		
+if !ini_read_real(lvl_name, "shroom", 0)
+	ini_write_real(lvl_name, "shroom", lvl_toppins.shroom)
+if !ini_read_real(lvl_name, "cheese", 0)
+	ini_write_real(lvl_name, "cheese", lvl_toppins.cheese)
+if !ini_read_real(lvl_name, "tomato", 0)
+	ini_write_real(lvl_name, "tomato", lvl_toppins.tomato)
+if !ini_read_real(lvl_name, "sausage", 0)
+	ini_write_real(lvl_name, "sausage", lvl_toppins.sausage)
+if !ini_read_real(lvl_name, "pineapple", 0)
+	ini_write_real(lvl_name, "pineapple", lvl_toppins.pineapple)
+		
+ini_close()
 instance_destroy()

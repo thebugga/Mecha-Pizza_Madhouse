@@ -17,7 +17,10 @@
   },
   "resourceType":"GMTileSet",
   "resourceVersion":"2.0",
-  "spriteId":null,
+  "spriteId":{
+    "name":"tsspr_entrance_decor",
+    "path":"sprites/tsspr_entrance_decor/tsspr_entrance_decor.yy",
+  },
   "spriteNoExport":false,
   "textureGroupId":{
     "name":"Default",

@@ -190,6 +190,7 @@ function set_globals()
 	global.boss_room = false
 	global.start_room = noone
 	global.in_level = false
+	global.gerome = false;
 	set_rank_milestones(1000, 500, 250, 125)
 	
 	global.level_data = {
