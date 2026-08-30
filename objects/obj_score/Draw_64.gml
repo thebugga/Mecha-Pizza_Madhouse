@@ -1,4 +1,4 @@
-depth = -200
+depth = 0
 
 var num = global.score
 

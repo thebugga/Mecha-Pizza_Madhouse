@@ -14,3 +14,16 @@ if escape_frozen
 
 do_enemy_generics()
 collide()
+
+
+if (grounded && scr_slope(x, y + 1))
+{
+    with instance_place(x, y, obj_slope)
+    {
+        var _dir = sign(image_xscale) 
+        var angle_rad = arctan2(image_yscale * _dir, image_xscale * _dir)
+        other.image_angle = radtodeg(angle_rad)
+    }
+}
+else
+    image_angle = 0

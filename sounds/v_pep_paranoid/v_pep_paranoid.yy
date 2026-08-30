@@ -10,7 +10,7 @@
   "compression":2,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":1.212,
+  "duration":0.81914586,
   "exportDir":"",
   "name":"v_pep_paranoid",
   "parent":{

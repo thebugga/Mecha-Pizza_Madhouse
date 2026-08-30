@@ -8,7 +8,7 @@ image_speed = 0
 alarm[0] = 20
 
 scr_sound(sfx_peppinopunch)
-particle_create(mouse_x, mouse_y, particles.bang).depth = -200
+particle_create(mouse_x, mouse_y, particles.bang).depth = 0
 
 repeat 2
-	particle_create(mouse_x, mouse_y, particles.stars).depth = -200
+	particle_create(mouse_x, mouse_y, particles.stars).depth = 0

@@ -1,0 +1,5 @@
+draw_set_color(c_black)
+draw_rectangle(-9999, -9999, -1, room_height, false)
+draw_rectangle(-9999, -9999, room_width + 9999, -1, false)
+draw_rectangle(room_width, -9999, room_width + 9999, room_height + 9999, false)
+draw_rectangle(-9999, room_height, room_width + 9999, room_height + 9999, false)

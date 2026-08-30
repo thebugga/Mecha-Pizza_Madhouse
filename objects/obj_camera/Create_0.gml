@@ -14,6 +14,18 @@ campos = {
 	y: 0
 }
 
-//version = "DEBLOATED";
-
-depth = -10000
+vertex_format_begin();
+vertex_format_add_position_3d();
+vertex_format_add_normal();
+vertex_format_add_texcoord();
+vertex_format_add_colour();
+vertexFormat = vertex_format_end();
+global.cubeMesh = importObj("Cube.obj", vertexFormat);
+camera = view_camera[0];
+chargecamera = 0;
+camDist = -350;
+camFov = 70;
+camAsp = camera_get_view_width(camera) / camera_get_view_height(camera);
+gpu_set_ztestenable(true);
+gpu_set_alphatestenable(true);
+gpu_set_texrepeat(true);

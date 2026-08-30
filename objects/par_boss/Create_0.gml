@@ -4,7 +4,7 @@ xscale = 1
 yscale = 1
 flash = false
 warp = 0
-
+depth = 0
 state = states.normal
 hanged = false
 movespeed = 0

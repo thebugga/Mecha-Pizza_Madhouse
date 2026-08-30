@@ -10,7 +10,7 @@
   "compression":0,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":128.80112,
+  "duration":142.40627,
   "exportDir":"",
   "name":"mu_entrance",
   "parent":{
@@ -21,6 +21,6 @@
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"mu_entrance.mp3",
+  "soundFile":"mu_entrance.wav",
   "volume":1.0,
 }

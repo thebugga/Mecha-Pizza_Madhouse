@@ -10,7 +10,7 @@
   "compression":2,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":0.68931973,
+  "duration":0.8823958,
   "exportDir":"",
   "name":"sfx_taunt",
   "parent":{
@@ -21,6 +21,6 @@
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":48000,
-  "soundFile":"sfx_taunt.ogg",
-  "volume":0.8,
+  "soundFile":"sfx_taunt.WAV",
+  "volume":1.0,
 }

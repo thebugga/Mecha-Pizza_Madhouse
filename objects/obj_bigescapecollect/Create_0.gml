@@ -1,7 +1,7 @@
 val = 100
 follow = false;
 movespeed = 0;
-depth = 50
+depth = 0
 
 if ds_list_find_index(global.ds_escapesaveroom, id) != -1
 	instance_destroy()

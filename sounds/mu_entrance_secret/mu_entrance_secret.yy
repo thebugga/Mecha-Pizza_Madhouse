@@ -22,5 +22,5 @@
   "resourceVersion":"2.0",
   "sampleRate":48000,
   "soundFile":"mu_entrance_secret.wav",
-  "volume":1.0,
+  "volume":0.7,
 }

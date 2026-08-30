@@ -10,7 +10,7 @@
   "compression":2,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":4.4226756,
+  "duration":1.8461678,
   "exportDir":"",
   "name":"sfx_beatbox",
   "parent":{

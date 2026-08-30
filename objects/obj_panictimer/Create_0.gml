@@ -27,4 +27,4 @@ y = ystart + 212
 im_speed = 1
 fx_speed = 1.5
 
-depth = -200
+depth = 0

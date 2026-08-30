@@ -10,7 +10,7 @@
   "compression":2,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":3.144,
+  "duration":4.243875,
   "exportDir":"",
   "name":"mu_title_john",
   "parent":{
@@ -21,6 +21,6 @@
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":48000,
-  "soundFile":"mu_title_john.mp3",
-  "volume":0.6,
+  "soundFile":"mu_title_john.wav",
+  "volume":1.0,
 }

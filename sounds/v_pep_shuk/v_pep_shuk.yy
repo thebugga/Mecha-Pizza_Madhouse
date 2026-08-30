@@ -10,7 +10,7 @@
   "compression":0,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":1.1133333,
+  "duration":1.4223542,
   "exportDir":"",
   "name":"v_pep_shuk",
   "parent":{

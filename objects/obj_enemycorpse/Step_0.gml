@@ -1,6 +1,22 @@
-x += hsp
-y += vsp
-vsp += grav
+// movement
+x += (hsp * image_xscale);
+y += (vsp * image_yscale);
+vsp += grav;
 
-if !bbox_in_camera()
-	instance_destroy()
+// rotate
+image_angle += choose(5, 10, 20);
+
+// change the depth of animation
+switch (layer_type)
+{
+	case 1:
+	    depth -= 0.9;
+		break;
+	case 2:
+	    depth = 0;
+		break;
+	case 3:
+	    depth += 0.4;
+		break;
+}
+

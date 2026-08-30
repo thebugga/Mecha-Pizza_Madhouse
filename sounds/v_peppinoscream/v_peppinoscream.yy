@@ -10,7 +10,7 @@
   "compression":2,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":3.2946713,
+  "duration":2.5823128,
   "exportDir":"",
   "name":"v_peppinoscream",
   "parent":{

@@ -10,7 +10,7 @@
   "compression":2,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":5.232041,
+  "duration":1.0289792,
   "exportDir":"",
   "name":"sfx_supertaunt",
   "parent":{
@@ -21,6 +21,6 @@
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":48000,
-  "soundFile":"sfx_supertaunt.ogg",
+  "soundFile":"sfx_supertaunt.wav",
   "volume":1.0,
 }

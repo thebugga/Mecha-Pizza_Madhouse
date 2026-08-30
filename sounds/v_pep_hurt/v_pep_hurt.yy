@@ -10,7 +10,7 @@
   "compression":0,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":1.156,
+  "duration":0.81914586,
   "exportDir":"",
   "name":"v_pep_hurt",
   "parent":{

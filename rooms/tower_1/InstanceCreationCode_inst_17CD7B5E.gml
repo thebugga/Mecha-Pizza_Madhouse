@@ -1,1 +1,0 @@
-dialog[0] = dialog_create("I THINK YEA", dia_bunny);

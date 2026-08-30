@@ -9,9 +9,6 @@ gpu_set_blendmode_normal_fixed()
 draw_reset_color()
 draw_rectangle(-1, -1, screen_w, screen_h, false)
 
-var screen_x = 0
-var screen_y = 0
-
 if global.option_texturefilter && 
 	!(
 		(window_get_width() == 960 && window_get_height() == 540) || //default res
@@ -19,10 +16,12 @@ if global.option_texturefilter &&
 	)
 	gpu_set_texfilter(global.option_texturefilter)
 
-draw_surface(application_surface, screen_x, screen_y)
+
+//draw_surface(obj_backgroundController.backGroundSurface, 0, 0)
+draw_surface(application_surface, 0, 0)
 
 shader_set(shd_gui_brighten) //solves an alpha issue
-draw_surface(gui_surf, screen_x, screen_y)
+draw_surface(gui_surf, 0, 0)
 shader_reset()
 
 gpu_set_texfilter(false)

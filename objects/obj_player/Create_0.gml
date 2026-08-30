@@ -126,7 +126,7 @@ haskey = false
 hasgerome = false
 fallingtimer = 0
 
-depth = -75
+depth = 0
 
 pal_select = 0
 pattern_spr = pat_pizza

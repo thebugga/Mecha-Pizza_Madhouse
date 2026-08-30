@@ -10,7 +10,7 @@
   "compression":2,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":1.4973333,
+  "duration":1.1761458,
   "exportDir":"",
   "name":"v_pep_paParanoid",
   "parent":{
