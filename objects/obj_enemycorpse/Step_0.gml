@@ -10,13 +10,13 @@ image_angle += choose(5, 10, 20);
 switch (layer_type)
 {
 	case 1:
-	    depth -= 0.9;
+	    depth -= 2;
 		break;
 	case 2:
 	    depth = 0;
 		break;
 	case 3:
-	    depth += 0.4;
+	    depth += 2;
 		break;
 }
 

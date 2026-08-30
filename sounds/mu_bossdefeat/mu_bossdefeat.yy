@@ -7,10 +7,10 @@
   },
   "bitDepth":1,
   "channelFormat":1,
-  "compression":2,
-  "compressionQuality":4,
+  "compression":1,
+  "compressionQuality":7,
   "conversionMode":0,
-  "duration":0.0,
+  "duration":9.182667,
   "exportDir":"",
   "name":"mu_bossdefeat",
   "parent":{
@@ -20,7 +20,7 @@
   "preload":false,
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
-  "sampleRate":48000,
+  "sampleRate":44100,
   "soundFile":"mu_bossdefeat.wav",
   "volume":1.0,
 }

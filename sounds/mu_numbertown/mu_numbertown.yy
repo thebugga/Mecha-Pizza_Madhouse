@@ -1,0 +1,26 @@
+{
+  "$GMSound":"v2",
+  "%Name":"mu_numbertown",
+  "audioGroupId":{
+    "name":"ag_music",
+    "path":"audiogroups/ag_music",
+  },
+  "bitDepth":1,
+  "channelFormat":1,
+  "compression":1,
+  "compressionQuality":7,
+  "conversionMode":0,
+  "duration":61.283264,
+  "exportDir":"",
+  "name":"mu_numbertown",
+  "parent":{
+    "name":"Music",
+    "path":"folders/Sounds/Music.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"mu_numbertown.wav",
+  "volume":1.0,
+}

@@ -144,7 +144,9 @@ function do_enemy_generics()
 		}
 	})
 
-	do_scared()
+	
+	if should_scare
+		do_scared()
 
 	grav = 0.5
 	if state == states.hit
