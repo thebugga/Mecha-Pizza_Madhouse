@@ -1,6 +1,8 @@
 function player_superjump() 
 {
-	hsp = xscale * movespeed
+	//hsp = xscale * movespeed
+	hsp = p_move * movespeed
+	movespeed = 3
 	image_speed = 0.35
 	
 	if (sprite_index == spr_player_superjumpprep || sprite_index == spr_player_superjumpflash)
@@ -70,7 +72,6 @@ function player_superjump()
 			}
 			create_effect(x, y, spr_cloudeffect)
 		}
-		movespeed = 0
 		
 		if (scr_solid(x, y - 1))
 		{

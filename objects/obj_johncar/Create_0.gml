@@ -12,8 +12,3 @@ sprs.stun = spr_johncar
 sprs.scared = spr_johncar
 sprs.dead = spr_johncar_dead
 sprs.turn = spr_johncar
-
-do_turn = false
-
-if !escape
-	create_hurtbox()

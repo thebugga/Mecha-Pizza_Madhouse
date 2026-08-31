@@ -31,10 +31,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"mask_collect",
-    "path":"sprites/mask_collect/mask_collect.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }

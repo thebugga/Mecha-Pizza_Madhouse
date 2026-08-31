@@ -17,7 +17,8 @@ if global.option_texturefilter &&
 	gpu_set_texfilter(global.option_texturefilter)
 
 
-//draw_surface(obj_backgroundController.backGroundSurface, 0, 0)
+//panicbg_update()
+
 draw_surface(application_surface, 0, 0)
 
 shader_set(shd_gui_brighten) //solves an alpha issue

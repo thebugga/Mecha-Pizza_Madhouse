@@ -176,11 +176,13 @@ function scr_solid(_x, _y)
 				{
 					case obj_solid:
 					case obj_destroyable:
-					case obj_metalblock:
 					case obj_ratblock:
 					case obj_rattumbleblock:
 						collided = true
 						continue;
+					case obj_metalblock:
+						if obj_player.state != states.superjump
+							collided = true
 					case obj_slope:
 						if (collide_slope(master, _x, _y))
 							collided = true

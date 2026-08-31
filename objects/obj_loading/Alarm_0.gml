@@ -25,4 +25,4 @@ else if (currentsndgroup < array_length(snd_group_arr))
 	alarm[0] = 1
 }
 else
-	room_goto(init_objs_room)
+	room_goto(rm_intro)

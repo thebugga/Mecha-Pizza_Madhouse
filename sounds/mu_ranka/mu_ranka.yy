@@ -10,7 +10,7 @@
   "compression":1,
   "compressionQuality":7,
   "conversionMode":0,
-  "duration":15.575604,
+  "duration":15.575601,
   "exportDir":"",
   "name":"mu_ranka",
   "parent":{

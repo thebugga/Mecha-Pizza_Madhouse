@@ -1,0 +1,26 @@
+{
+  "$GMSound":"v2",
+  "%Name":"v_carl_scream",
+  "audioGroupId":{
+    "name":"ag_sfx",
+    "path":"audiogroups/ag_sfx",
+  },
+  "bitDepth":1,
+  "channelFormat":1,
+  "compression":2,
+  "compressionQuality":4,
+  "conversionMode":0,
+  "duration":2.3452291,
+  "exportDir":"",
+  "name":"v_carl_scream",
+  "parent":{
+    "name":"Voice",
+    "path":"folders/Sounds/Voice.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":48000,
+  "soundFile":"v_carl_scream.wav",
+  "volume":0.7,
+}

@@ -20,6 +20,9 @@ if !layer_background_exists(lay_id, back_id)
 layer_depth(layer_get_id("Instances"), 0)
 layer_depth(layer_get_id("Instances_1"), 0)
 
+layer_depth(layer_get_id("Backgrounds_1"), 60)
+layer_depth(layer_get_id("Backgrounds_2"), 80)
+
 layer_depth(layer_get_id("Tiles_1"), -100)
 layer_depth(layer_get_id("Tiles_2"), -100)
 layer_depth(layer_get_id("Tiles_3"), -100)

@@ -42,7 +42,6 @@ function gameframe_update() {
 	gameframe_cover_ensure();
 	if (window_get_fullscreen() || gameframe_isFullscreen_hx) {
 		gameframe_tools_keyctl_reset();
-		gameframe_set_window_cursor(cr_none);
 		exit;
 	}
 	gameframe_tools_keyctl_update();
@@ -58,7 +57,6 @@ function gameframe_update() {
 	var __titleHit = false;
 	var __hitSomething = true;
 	var _resizePadding = gameframe_resize_padding;
-	var __mouse_has_moved = window_mouse_get_delta_x() + window_mouse_get_delta_y() > 0
 	if (!point_in_rectangle(_mx, _my, __buttons_x, __borderWidth, _gw - __borderWidth - ((gameframe_isMaximized_hx ? 0 : _resizePadding)), __borderWidth + __titleHeight)) {
 		if (!gameframe_isMaximized_hx && gameframe_can_resize && !point_in_rectangle(_mx, _my, _resizePadding, _resizePadding, _gw - _resizePadding, _gh - _resizePadding)) {
 			if (_mx < _resizePadding) __flags |= 1;
@@ -70,11 +68,6 @@ function gameframe_update() {
 		} else __hitSomething = false;
 	}
 	gameframe_mouse_over_frame = __hitSomething;
-	if gameframe_mouse_in_window() && __mouse_has_moved
-		gameframe_alpha_timer = 200
-	else if gameframe_alpha_timer > 0
-		gameframe_alpha_timer--
-	gameframe_alpha = approach(gameframe_alpha, gameframe_alpha_timer > 0 ? 1 : 0, 0.05)
 	if (gameframe_drag_flags == 0) {
 		var __cursor = gameframe_default_cursor;
 		if (gameframe_can_input && gameframe_can_resize) switch (__flags) {
@@ -1203,9 +1196,7 @@ gameframe_debug = false;
 globalvar gameframe_blend; /// @is {int}
 gameframe_blend = 16777215;
 globalvar gameframe_alpha; /// @is {number}
-gameframe_alpha = 0;
-globalvar gameframe_alpha_timer; /// @is {number}
-gameframe_alpha_timer = 0;
+gameframe_alpha = 1.0;
 globalvar gameframe_can_input; /// @is {bool}
 gameframe_can_input = true;
 globalvar gameframe_can_resize; /// @is {bool}
@@ -1253,7 +1244,7 @@ gameframe_caption_font = -1;
 globalvar gameframe_caption_text_align; /// @is {gml_gpu_TextAlign}
 gameframe_caption_text_align = 0;
 globalvar gameframe_caption_icon; /// @is {sprite}
-gameframe_caption_icon = asset_get_index("spr_gameframe_icon");
+gameframe_caption_icon = -1;
 globalvar gameframe_caption_margin; /// @is {int}
 gameframe_caption_margin = 6;
 globalvar gameframe_caption_icon_margin; /// @is {int}

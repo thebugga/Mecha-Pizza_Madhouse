@@ -4,6 +4,12 @@ global.panic = {
 	timer_max: 0
 }
 
+global.panicbg = 1
+global.maxwave = 0
+global.wave = 0
+global.paniclayercount = 0
+global.panicshadetimer = 0
+
 john = {
 	image_index: 0,
 	image_speed: 0.35

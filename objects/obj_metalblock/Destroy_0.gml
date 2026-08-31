@@ -15,4 +15,11 @@ if (ds_list_find_index(global.ds_saveroom, id) == -1)
 	shake_camera(20, 40 / room_speed)
     scr_sound(sfx_breakmetal)
     ds_list_add(global.ds_saveroom, id)
+	with obj_player
+	{
+		if state == states.superjump
+		{
+			vsp = -11
+		}
+	}
 }

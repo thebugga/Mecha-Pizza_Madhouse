@@ -1,5 +1,8 @@
 if do_particles
 {
+	if irandom(100) <= 5
+		scr_sound_3d_pitched(v_raredeathscream, x, y)
+	
 	with instance_create(x, y, obj_enemycorpse)
 		sprite_index = other.sprs.dead
 	

@@ -11,5 +11,3 @@ alarm[0] = 5
 layer_type = round(random_range(1, 3));
 image_xscale = 1;
 image_yscale = 0.5;
-if irandom(100) <= 5
-	scr_sound_3d_pitched(v_raredeathscream, x, y)

@@ -1,4 +1,4 @@
-depth = 0
+depth = 12
 obj_particlecontroller_close.postdraw_list = []
 for (var p = 0; p < array_length(particle_list); p++) 
 {

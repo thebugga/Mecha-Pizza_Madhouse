@@ -19,7 +19,7 @@ switch state
 		break;
 	case 4:
 		bgy -= 4
-		draw_sprite_tiled(bg_bossversus, 0, 0, bgy)
+		draw_sprite_tiled(bg_bossversus, 0, 0, 0)
 		
 		draw_sprite(player.sprite_index, 0, player.x - irandom(shakemag), player.y + irandom(shakemag))
 		draw_sprite(boss.sprite_index, 0, boss.x + irandom(shakemag), boss.y + irandom(shakemag))

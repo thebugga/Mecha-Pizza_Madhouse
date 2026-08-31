@@ -22,26 +22,10 @@ if instance_exists(obj_player) && !(room_width == 960 && room_height == 540)
 	}
 	
 	cam_charge = approach(cam_charge, target_spd, appr_spd)
-	
+		
 	if (global.panic.active && global.panicbg != 0)
 	{
 	    global.panicshadetimer++
-	    var a = layer_get_all()
-	    var b = []
-	    global.paniclayercount = 0
-	    for (var i = 0; i < array_length(a); i++)
-	    {
-	        if (string_copy(layer_get_name(a[i]), 1, 12) == "Backgrounds_" || string_copy(layer_get_name(a[i]), 1, 7) == "Assets_" || string_copy(layer_get_name(a[i]), 1, 11) == "Foreground_")
-	        {
-	            b[global.paniclayercount] = a[i]
-	            global.paniclayercount++
-	        }
-	    }
-	    for (var j = 0; j < array_length(b); j++)
-	    {
-	        layer_script_begin(b[j], scr_panicbg_start)
-	        layer_script_end(b[j], scr_panicbg_end)
-	    }
 	    global.maxwave = (instance_exists(obj_tv) ? global.panic.timer_max : 4000)
 	    global.wave = (global.panic.timer > 0 ? (global.maxwave - global.panic.timer) : (global.maxwave))
 	}
