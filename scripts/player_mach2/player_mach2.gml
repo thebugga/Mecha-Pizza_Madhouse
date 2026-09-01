@@ -97,7 +97,7 @@ function player_mach2()
 			wallspeed = 1
 		else
 			movespeed = wallspeed
-		state = states.climbwall
+		state = states.clingwall
 	}
 	else if (grounded && scr_hitwall(x + xscale, y))
 	{
@@ -132,6 +132,12 @@ function player_mach2()
 			break;
 	}
 	do_taunt()
+	
+	if ((input_check(INPUTS.up) && global.option_dirsuperjump) || input_check(INPUTS.superjump)) && vsp >= 0
+	{
+		state = states.superjump
+		reset_anim(spr_player_superjumpprep)
+	}
 	
 	aftimg_timers.mach.do_it = true
 }

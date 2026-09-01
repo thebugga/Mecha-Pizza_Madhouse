@@ -1,2 +1,2 @@
-npc_do_dialog();
+do_dialog(dialog);
 instance_destroy()

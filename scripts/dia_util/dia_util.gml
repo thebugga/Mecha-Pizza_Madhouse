@@ -1,8 +1,7 @@
-function dialog_create(_text, _namespr = noone, _endfunc = noone, _bgspr = bg_bunny, _charname = "BUNNY")
+function dialog_create(_text, _namespr = noone, _bgspr = bg_noelle, _charname = "NOELLE", _func = noone, _endfunc = noone)
 {
-	return [_text, _namespr, _endfunc, _bgspr, _charname]; // last argument is never used afaik
+	return [_text, _namespr, _bgspr, _charname, _func, _endfunc];
 }
-
 function scr_string_width(_str)
 {
 	var pos = 0;
@@ -156,15 +155,15 @@ function scr_draw_granny_texture2(_x, _y, _width, _height, _tile_x, _tile_y, _ti
 
 function do_dialog(_dialog)
 {
-	with (instance_create(x, y, obj_diacontroller))
+	with (instance_create(x, y, obj_dialog_controller))
 	{
 		npcID = other.id;
 		dialog = _dialog;
-		dialogsprite = dialog[0][1];
-		currenttext = scr_calculate_text(dialog[0][0]);
+		dialogsprite = _dialog[0][1];
+		currenttext = scr_calculate_text(_dialog[0][0]);
 		dialogheight = scr_calculate_height(currenttext);
-		textbgpr = dialog[0][3];
-		charactername = dialog[0][4];
+		textbgspr = _dialog[0][2];
+		charactername = _dialog[0][3];
 	}
 	with (obj_player)
 	{
@@ -175,9 +174,4 @@ function do_dialog(_dialog)
 		vsp = 0;
 		movespeed = 0;
 	}
-}
-
-function npc_do_dialog()
-{
-	do_dialog(dialog);
 }

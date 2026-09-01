@@ -55,7 +55,7 @@ with obj_doorpoint
 								x += xscale
 						}
 					}
-					other.state = states.climbwall
+					other.state = states.clingwall
 				}
 				break;
 			case fade_types.door:

@@ -37,7 +37,7 @@ var text_offset = text_offsets[image_index]
 //for (var i = 0; i < min(rank_ix, 4); i++)
 //	draw_sprite(spr_pizzascore_toppings, i, x, y + text_offset)
 	
-draw_set_colour(c_lime)
+draw_set_colour(#F8B800)
 draw_set_font(fnt_calc)
 
 var arr = obj_collect_got_visual.collects

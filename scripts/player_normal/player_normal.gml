@@ -195,5 +195,11 @@ function player_normal()
 			break;
 	}
 	
+	if ((input_check(INPUTS.up) && global.option_dirsuperjump) || input_check(INPUTS.superjump)) && vsp >= 0
+	{
+		state = states.superjump
+		reset_anim(spr_player_superjumpprep)
+	}
+	
 	do_taunt()
 }

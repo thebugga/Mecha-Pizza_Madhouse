@@ -111,7 +111,7 @@ function player_mach3()
 				wallspeed = 1
 			else
 				movespeed = wallspeed
-			state = states.climbwall
+			state = states.clingwall
 		}
 	}
 	else if grounded && scr_hitwall(x + xscale, y) && !place_meeting(x + xscale, y, obj_metalblock)

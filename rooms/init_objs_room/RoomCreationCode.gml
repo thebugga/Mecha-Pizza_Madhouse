@@ -6,6 +6,7 @@ enum states
 	mach3,
 	tumble,
 	climbwall,
+	clingwall,
 	slide,
 	bump,
 	groundpound,
@@ -31,6 +32,7 @@ enum states
 	shotgunshoot,
 	ball,
 	slip,
+	doublejump,
 	
 	//enemy states
 	hit,

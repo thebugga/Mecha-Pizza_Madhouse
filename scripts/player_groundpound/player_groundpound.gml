@@ -117,6 +117,10 @@ function player_groundpound()
 			}
 		}
 	}
+	if sprite_index == spr_player_poundcancel1 && scr_hitwall(x + hsp, y)
+	{
+		xscale *= -1
+	}
 	
 	image_speed = 0.35
 	aftimg_timers.blur.do_it = true

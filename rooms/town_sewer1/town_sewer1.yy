@@ -90,8 +90,8 @@
   ],
   "name":"town_sewer1",
   "parent":{
-    "name":"Number Town Old",
-    "path":"folders/Rooms/Number Town Old.yy",
+    "name":"Number Town Older",
+    "path":"folders/Rooms/Number Town Older.yy",
   },
   "parentRoom":null,
   "physicsSettings":{

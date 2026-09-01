@@ -50,7 +50,7 @@ function player_grab()
 	{
 		wallspeed = 6
 		grabclimbbuffer = 10
-		state = states.climbwall
+		state = states.clingwall
 	}
 	else if (scr_hitwall(x + xscale, y) && grounded)
 	{

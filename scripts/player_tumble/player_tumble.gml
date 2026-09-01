@@ -2,13 +2,13 @@ function player_tumble() //ball is in its own state, player_ball()
 {
 	hsp = xscale * movespeed
 	
-	if !grounded && sprite_index != spr_player_dive && sprite_index != spr_player_jumpdive_loop && sprite_index != spr_player_jumpdive && sprite_index != spr_player_crouchslip
+	if !grounded && sprite_index != spr_player_dive && sprite_index != spr_player_doublejump && sprite_index != spr_player_jumpdive && sprite_index != spr_player_crouchslip
 	{
 		vsp = 10
 		sprite_index = spr_player_dive
 		scr_sound_3d_pitched(sfx_dive, x, y, 1.3, 1.315)
 	}
-	else if grounded && (sprite_index == spr_player_dive || sprite_index == spr_player_jumpdive || sprite_index == spr_player_jumpdive_loop)
+	else if grounded && (sprite_index == spr_player_dive || sprite_index == spr_player_jumpdive || sprite_index == spr_player_doublejump)
 		reset_anim(spr_player_machroll)
 		
 	if (sprite_index == spr_player_dive && input_buffers.jump > 0)
@@ -17,6 +17,7 @@ function player_tumble() //ball is in its own state, player_ball()
 		sprite_index = spr_player_poundcancel1
 		state = states.groundpound
 		vsp = -6
+		hsp = 6
 		dir = xscale
 	}
 	
@@ -97,7 +98,7 @@ function player_tumble() //ball is in its own state, player_ball()
 		vsp = 10
 
     if (sprite_index == spr_player_crouchslip && !grounded)
-        sprite_index = spr_player_jumpdive_loop;
+        sprite_index = spr_player_doublejump;
 		
 	image_speed = movespeed / 20
 		
@@ -105,7 +106,7 @@ function player_tumble() //ball is in its own state, player_ball()
 		reset_anim(spr_player_backslide_loop)
 	
 	if sprite_index == spr_player_jumpdive && anim_ended()
-		reset_anim(spr_player_jumpdive_loop)
+		reset_anim(spr_player_doublejump)
 	
 	aftimg_timers.blur.do_it = true
 }

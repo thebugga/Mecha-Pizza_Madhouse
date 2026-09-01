@@ -1,0 +1,26 @@
+{
+  "$GMSound":"v2",
+  "%Name":"v_noelle",
+  "audioGroupId":{
+    "name":"ag_sfx",
+    "path":"audiogroups/ag_sfx",
+  },
+  "bitDepth":1,
+  "channelFormat":1,
+  "compression":0,
+  "compressionQuality":4,
+  "conversionMode":0,
+  "duration":0.043291666,
+  "exportDir":"",
+  "name":"v_noelle",
+  "parent":{
+    "name":"Voice",
+    "path":"folders/Sounds/Voice.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":48000,
+  "soundFile":"v_noelle.wav",
+  "volume":1.0,
+}

@@ -1,9 +1,28 @@
 function player_superjump() 
 {
-	//hsp = xscale * movespeed
-	hsp = p_move * movespeed
+	hsp = xscale * movespeed
 	movespeed = 3
 	image_speed = 0.35
+	
+	if (sprite_index == spr_player_clingwall2 || sprite_index == spr_player_superjump || sprite_index == spr_player_clingwall3)
+	{
+		vsp = -12
+		if sprite_index == spr_player_clingwall3
+			hsp = xscale * 6
+	}
+	
+	if !scr_hitwall(x + hsp, y) && sprite_index == spr_player_clingwall2
+	{
+		state = states.doublejump
+		sprite_index = spr_player_doublejump
+		vsp = -14
+	}
+	
+	if scr_hitwall(x + hsp, y) && sprite_index == spr_player_clingwall2 && input_check_pressed(INPUTS.jump)
+	{
+		xscale *= -1
+		sprite_index = spr_player_clingwall3
+	}
 	
 	if (sprite_index == spr_player_superjumpprep || sprite_index == spr_player_superjumpflash)
 		movespeed = approach(movespeed, 0, 1)
@@ -50,13 +69,13 @@ function player_superjump()
 	
 	if (sprite_index != spr_player_superjump && sprite_index != spr_player_presentboxspring && sprite_index != spr_player_Sjumpcancel && sprite_index != spr_player_Sjumpcancelstart && sprite_index != spr_player_superjumpprep && !superjumpholding && !scr_solid(x, y - 1))
 	{
-		vsp = -11 //its -12, but -11 makes it *feel* more like the original
+		//vsp = -11 //its -12, but -11 makes it *feel* more like the original
 		sprite_index = spr_player_superjump
-		scr_sound_3d_on(myemitter, sfx_superjumprelease)
-		create_effect(x, y, spr_superjumpexplosion)
+		scr_sound_3d_on(myemitter, sfx_explosion)
+		create_effect(x, y, spr_explosion)
 	}
 	
-	if (sprite_index == spr_player_superjump || sprite_index == spr_player_presentboxspring)
+	if (sprite_index == spr_player_superjump || sprite_index == spr_player_presentboxspring || (sprite_index == spr_player_clingwall2 || sprite_index == spr_player_superjump || sprite_index == spr_player_clingwall3))
 	{
 		instakill = true
 		image_speed = abs(vsp) / 25
